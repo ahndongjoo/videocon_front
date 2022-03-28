@@ -1,0 +1,74 @@
+<div class="mp_left">
+    <div class="mp_loading">
+        <div class="img_box">
+            <img src="/img/Toploading(w).gif">
+        </div>
+    </div>
+    <div class="left_common">
+        <div class="left_box1">
+            <!-- 프로필 사진  -->
+            <div class="pro_box">
+                <form id="profiie_form" method="POST">
+                    <label for="pro_hidden">
+                        <div class="img_box">
+                            <img src="/img/back_white.png" alt="프로필사진">
+                        </div>
+                    </label>
+                    <div class="profile_btn">
+                        <label for="pro_hidden">
+                            <img src="/img/plus_file_btn.png">
+                         </label>
+                        <input type="file" name="image" id="pro_hidden" onchange="proImg(this)">
+                    </div>
+                </form>
+            </div>
+            <!-- 프로필 사진 END  -->
+        </div>
+        <div class="left_box2">
+            <div class="type_box">
+                <span>CLIENT</span>
+            </div>
+            <p class="nickname"></p>
+            <div class="join_date">
+                <span>가입일 : <em></em></span>
+            </div>
+        </div>
+        <div class="left_box3">
+             <div class="admin_box">
+                <a class="ad_change" href="javascript:;" onclick="userTypeChange()"><span class="ad_btn3">사용자 전환</span></a>
+                <input class="type_state" type="text" name="state">
+            </div>
+            <div class="qa_box" onclick="MainUpopup()">
+                <span>사용자 전환이 궁금해요</span>
+            </div>
+        </div>
+        <div class="left_box4">
+            <h4>활동 정보</h4>
+            <ul>
+                <li>
+                    <a href="/sub/mypage2/mypage(contest).html">내 콘테스트</a>
+                </li>
+                <li>
+                    <a onclick="readyAlert()" href="javascript:;">찜한 목록</a>
+                </li>
+                <li onclick="readyAlert()">
+                    <a href="javascript:;">전체 알림</a>
+                </li>
+            </ul>
+        </div>
+        <div class="left_box5">
+            <h4>기본 정보</h4>
+            <ul>
+                <li>
+                    <a href="/sub/mypage2/mypage(info).html">계정 관리</a>
+                </li>
+                <li onclick="readyAlert()">
+                    <a href="javascript:;">상금 정보</a>
+                </li>
+                <li>
+                    <a href="/sub/mypage2/mypage(pay).html">결제 정보</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

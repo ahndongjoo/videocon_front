@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>VideoCon</title>
+        <meta charset = "utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+        <meta name="description" content="비디오콘에 대해서 ">
+        <meta name="keywords" content="video , portfolio">
+        <meta name="classification" content="video , portfolio">
+        <meta name="author" content="videocon">
+        <!--style -->
+        <link rel="stylesheet" href="/css/board.css?ver=2.1.5" type="text/css" media="all">
+        <link rel="stylesheet" href="/css/common.css?ver=2.1.5" type="text/css" media="all">
+        <link rel="stylesheet" href="/css/layout.css?ver=2.1.5" type="text/css" media="all">
+        <link rel="stylesheet" href="/css/main.css?ver=2.1.5" type="text/css" media="all">
+        <link rel="stylesheet" href="/css/reset.css" type="text/css" media="all">
+        <!-- PlugIn -->
+        <!--font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body class="body">
+        <div class="wrap">
+            <!-- 팝업 아이디/비번 찾기 -->
+            <div class="popup_search popup_common">
+                <div class="inner4">
+                    <div class="inner_container">
+                        <!-- 팝업 네비게이션 -->
+                        <div class="popup_top">
+                            <ul>
+                                <li><a style="border-bottom: 2px solid #fff;" href="/sub/member/search/id_search.html">아이디 찾기</a></li>
+                                <li><a href="/sub/member/search/pw_search.html">비밀번호 찾기</a></li>
+                            </ul>
+                        </div>
+                        <!-- 팝업 네비게이션 END -->
+                        <div class="popup_middle">
+                            <img src="/img/su_circle.png" alt="확인">
+                            <!-- 팝업 헤더 -->
+                            <div class="m_top">
+                                <h3>비디오콘 아이디 찾기</h3>
+                                <p>가입하실 떄 등록했던 정보를 입력해주세요.</p>
+                            </div>
+                            <div class="m_data">
+                                <h2>회원님의<br>아이디는 <em></em> 입니다</h2>
+                            </div>
+                            <!-- 팝업 헤더 END -->
+                            <!-- 아이디/비번 찾기 정보 입력 -->
+                            <div class="m_middle">
+                                <dl>
+                                    <dd>
+                                        <label style="display: none;"><span>아이디찾기</span></label>
+                                    </dd>
+                                    <dt>
+                                        <button class="id_search"><span>아이디 찾기</span></button>
+                                    </dt>
+                                </dl>
+                            </div>
+                            <!-- 아이디/비번 찾기 정보 입력 END -->
+                            <!-- 팝업 푸터 -->
+                            <div class="m_bot">
+                                <h3>비밀번호가 기억이 안나신다면? <a href="/sub/member/search/pw_search.html"> 비밀번호 찾기 바로가기</a></h3>
+                                <p>자세한 문의 사항은 고객센터로 문의주세요(오전 10:00 ~ 오후 19:00)<br>(070-8018-9220)</p>
+                            </div>
+                            <!-- 팝업 푸터 END -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 팝업 아이디/비번 찾기 END -->
+        </div>
+        <script src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js" type="text/javascript"></script>
+        <script src="/JS/jquery-3.4.1.min.js" type="text/javascript"></script>
+        <script src="/JS/jquery.cookie.js" type="text/javascript"></script> 
+        <script src="/JS/store.js?ver=2.1.5" type="text/javascript"></script> 
+        <script src="/JS/auth.js?ver=2.1.5" type="text/javascript"></script> 
+        <script>
+            //checkbox account 확인
+            $("input[name='id_search']").on("change" , function(){
+                if( $(this).is(':checked') ){
+                    if( $(this).attr('id') === 'id_mail'){
+                        $("#search_mail").css("display" , "block");
+                        $("#search_number").css("display" , "none");
+                        return false
+                    } else {
+                        $("#search_mail").css("display" , "none");
+                        $("#search_number").css("display" , "block");
+                    }
+                }
+            });
+        </script>       
+    </body>
+</html>

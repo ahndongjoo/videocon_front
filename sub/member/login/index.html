@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko" class="html_style">
+    <head>
+        <title>영상 콘테스트는 비디오콘에서 - 비디오콘</title>
+        <meta charset = "utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=1200">
+        <meta name="description" content="비디오콘에 대해서 ">
+        <meta name="keywords" content="video , portfolio">
+        <meta name="classification" content="video , portfolio">
+        <meta name="author" content="videocon">
+        <!--style -->
+        <link rel="stylesheet" href="/css/reset.css" type="text/css" media="all">
+        <link rel="stylesheet" href="/css/board.css?ver=2.1.5" type="text/css" media="all">
+        <link rel="stylesheet" href="/css/common.css?ver=2.1.5" type="text/css" media="all">
+        <link rel="stylesheet" href="/css/layout.css?ver=2.1.5" type="text/css" media="all">
+        <link rel="stylesheet" href="/css/main.css?ver=2.1.5" type="text/css" media="all">
+        <!-- 카카오톡 -->
+        <meta property="og:url" content="https://www.videocon.io/">
+		<meta property="og:type" content="website"> 
+        <meta property="og:site_name" content="비디오콘">
+		<meta property="og:title" content="영상 콘테스트는 비디오콘에서 | 비디오콘">
+		<meta property="og:description" content="영상 콘테스트 플랫폼 비디오콘! , 모든 영상 정보를 한 눈에 || 영상제작 1편 예산으로 평균 10~20편의 영상 컨텐츠를 받아보세요.">
+		<meta property="og:image" content="img/og_img.png">
+        <!-- favicon -->
+		<link rel="shortcut icon" href="/img/favicon.png"type="image/x-icon">
+        <!--font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body class="body">
+        <div class="wrap wrap_hidden">
+            <div class="login_form table_form">
+                <!-- 로그인 배경화면 -->
+                <div class="join_left table_left">
+                    <h2><a href="/index.html"><img src="/img/logo_w.png" alt="logo"></a></h2>
+                    <img src="/img/login_bg.png" alt="로그인배경화면">
+                </div>
+                <!-- 로그인 배경화면 END -->
+                <div class="login_right table_right">
+                    <div class="inner5">
+                        <div class="login_container table_container">
+                            <!-- 로그인 제목 -->
+                            <div class="login_top">
+                                <h3>로그인하기</h3>
+                                <p>지금 비디오콘에 가입하여 다양한 영상제작자들과 경쟁하세요</p>
+                            </div>
+                            <!-- 로그인 END -->
+                            <!-- 로그인 정보 입력 -->
+                            <div class="login_middle">
+                                <ul>
+                                    <li>
+                                        <div class="login_info">
+                                            <label>아이디</label>
+                                        </div>
+                                        <div class="login_box">
+                                            <input type="text" name="account" id="login_account" placeholder="아이디를 입력해주세요" maxlength="25">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="login_info">
+                                            <label>비밀번호</label>
+                                        </div>
+                                        <div class="login_box">
+                                            <input type="password" name="pw" id="login_pw" placeholder="비밀번호를 입력해주세요" maxlength="25">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="login_info">
+                                            <label>로그인</label>
+                                        </div>
+                                        <div class="login_box">
+                                            <button id="login_btn" onclick="LoginBtn()"><p>로그인</p></button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <!-- <div class="login_m">
+                                            <input type="checkbox" id="login_m">
+                                            <label for="login_m"><span>로그인 유지</span></label>
+                                        </div> -->
+                                        <div class="login_search">
+                                            <a href="/sub/member/search/id_search.html" onclick="window.open(this.href, '_blank', 'width=450, height=650'); return false;"><span>아이디 · 비밀번호 찾기</span><img src="/img/right_arr3.png"></a>
+                                            <!-- <a href="javascript:;" class="info_search">아이디 · 비밀번호 찾기 ></a> -->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 로그인 정보 입력 END -->
+                            <!-- SNS 간편 로그인 -->
+                            <div class="login_bot">
+                                <p style="display: none;">SNS 간편로그인</p>
+                                <div class="sns_btn" style="display: none;">
+                                    <a href="javascript:;" class="never" onclick="naverlogin();"><img class="sns_icon" src="/img/naver_icon.png"></a>
+                                    <a href="javascript:;" class="google" onclick="googlelogin();"><img class="sns_icon" src="/img/google.icon.png"></a>
+                                    <a href="javascript:;"class="kakao" onclick="kakaologin();"><img class="sns_icon" src="/img/kaka_icon.png"></a>
+                                </div>
+                                <div class="login_join">
+                                    <a href="/sub/member/join/choice.html">아직 비디오콘 회원이 아니신가요? <span>회원가입</span></a>
+                                </div>
+                            </div>
+                            <!-- SNS 간편 로그인 END -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js" type="text/javascript"></script>
+        <script src="/JS/jquery-3.4.1.min.js" type="text/javascript"></script>
+        <script src="/JS/jquery.cookie.js" type="text/javascript"></script> 
+        <script src="/JS/store.js?ver=2.1.5" type="text/javascript"></script> 
+        <script src="/JS/auth.js?ver=2.1.5" type="text/javascript"></script> 
+        <script src="/JS/script.js?ver=2.1.5" type="text/javascript"></script>          
+    </body>
+</html>

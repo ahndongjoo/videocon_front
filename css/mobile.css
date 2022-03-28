@@ -1,0 +1,62 @@
+.mobile_inner {max-width: 768px; margin: 0 auto;}
+.m_header {width: 100%; height: 60px; background-color: #fff; position: relative;}
+
+.mobile_logo {position: absolute; top: 10px; left: 10px; width: 40px; height: 40px;}
+.mobile_logo img {width: 100%; height: 100%;}
+
+.mobile_btn {position: absolute; right: 10px; top: 50%; transform: translate(0% , -50%);}
+.mobile_btn a {border: 1px solid #ef4d4d; box-sizing: border-box; color:#fff; border-radius: 20px; padding: 8px 10px; font-size: 13px; background-color: #ef4d4d; font-weight: bold;}
+.mobile_btn a:nth-child(1) {}
+.mobile_btn a:nth-child(2) {}
+
+.mobile_container {width: 100%; height: 100%;}
+.mobile_container img {width: 100%; height: 100%;}
+
+.mobile_container3 {}
+.mobile_container3 .moblie_menu {height: 50px; line-height: 50px; border-top: 1px solid #eee; border-bottom: 1px solid #eee;}
+.mobile_container3 .moblie_menu ul {}
+.mobile_container3 .moblie_menu ul li {display: inline-block; margin-left: 10px;}
+.mobile_container3 .moblie_menu ul li a {font-size: 14px; font-weight: bold;}
+.mobile_container3 .moblie_menu ul li:nth-child(1) {border-bottom: 2px solid #ef4d4d;}
+.mobile_container3 .mobile_cate {padding-top: 20px;}
+.mcate_btn {font-size: 12px !important; width: 120px !important;;  height: 40px !important; line-height: 40px !important;}
+
+.mobile_list {margin-top: 20px;}
+.mobile_list ul {}
+.mobile_list ul li {position: relative; border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 25px 0px 25px 15px; cursor: pointer;}
+.mobile_list ul li .mlist_img {top: 15px; left: 15px; position: absolute; display: inline-block; width: 135px; height: 101px;  vertical-align: middle;}
+.mobile_list ul li .mlist_img img {width: 100%; height: 100%;}
+.ddays {position: absolute; top: -5px; left: -10px;}
+.ddays span {margin-right: 5px; padding: 3px 5px; font-size: 10px; border-radius: 20px; box-sizing: border-box; background-color: #ef4d4d; color: #fff;}
+
+
+.mobile_list ul li .mlist_text {display: inline-block; vertical-align: middle; margin-left: 155px; width: 200px;}
+.mobile_list ul li .mtext1 {}
+.mobile_list ul li .mtext1 p {color: #ef4d4d; font-size: 12px;}
+.mobile_list ul li .mtext1 h2 {font-size: 12px; font-weight: bold; padding: 5px 0 8px 0; width: 85%; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;} 
+.mobile_list ul li .mtext1 span {color: #999; font-size: 11px;} 
+.mobile_list ul li .mtext2 {padding-top: 10px;}
+.mobile_list ul li .mtext2 span {margin-right: 5px; padding: 4px 8px; font-size: 11px; border: 1px solid #ef4d4d; border-radius: 20px; box-sizing: border-box;}
+.mobile_list ul li .mtext2 span:nth-child(1) { border-color: #ef4d4d; color: #ef4d4d; background-color: #fff;}
+.mobile_list ul li .mtext2 span:nth-child(2) {border-color: #999; position: relative; padding-left: 25px; color: #999;}
+.mobile_list ul li .mtext2 span:nth-child(2)::before {position: absolute; content: ''; top: 50%; left: 10px; width: 12px; height: 8px; background-image: url(/img/eye_icon.png); background-repeat: no-repeat; background-position: center; top: 50%; transform: translate(0px, -50%);}
+
+.m_footer {text-align: center; margin: 45px 0 90px;}
+.m_footer .pc_btn a {padding: 10px 15px; color: #ef4d4d; border: 1px solid #ef4d4d; border-radius: 20px; font-size: 13px;}
+.m_footer  p {color: #999; font-size: 12px; padding-top: 40px;}
+
+.m_modal {display: none; z-index: 999; position:fixed; width:100%; height:100%; top:0; left:0;background:rgba(0,0,0,0.8);}
+.modal_bg {z-index: 999; position:fixed; width:100%; height:100%; top:0; left:0; z-index: 1000; }
+.m_modal img {width: 100%; height: 100%;}
+.mclose_btn {position: absolute; bottom: 0; width: 100%; z-index: 1000;}
+.mclose_btn a {text-align: center; color: #fff; display: block; width: 100%; height: 50px; line-height: 50px; background-color: #ef4d4d; font-weight: bold; font-size: 14px;}
+
+
+
+
+
+
+
+
+
+
