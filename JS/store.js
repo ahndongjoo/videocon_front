@@ -1,6 +1,7 @@
 //전체 공통
-var E = "http://3.34.190.242:8080";
-// var E = "https://api.videocon.io";
+var currentUrl = "videocon.io"
+// var E = "http://3.34.190.242:8080";
+var E = "https://api.videocon.io";
 var UD = $.cookie('UD');
 var UT = $.cookie('UT');
 var CT = $.cookie('CT');
@@ -25,6 +26,41 @@ function readyAlert(){
     alert("준비 중입니다.")
     return;
 };
+
+// beforeSend: function (xhr, set) {
+        //     url = currentUrl + "?" + set.data;
+        //     console.log(set.data);
+        //     console.log(set.url);
+        // },
+
+// var httpReq = new XMLHttpRequest();
+// function urlPara(){
+
+//     console.log(httpReq);
+//     // var link = window.location.host
+//     // console.log(link)
+//     // var path = window.location.pathname
+//     // var pathLink = `${link}${path}`
+//     // console.log(pathLink);
+    
+//     // var pathport = window.location.host
+//     // console.log(pathport);
+
+//     // var req = new XMLHttpRequest();
+//     httpReq.onreadystatechange = function(){
+//         if(httpReq.readyState == XMLHttpRequest.DONE && httpReq.status == 200){
+//             var ss = document.getElementById("text").innerHTML = httpReq.responseText;
+//             var sss = document.getElementById("header").innerHTML = httpReq.getAllResponseHeaders();
+//             var ssss = document.getElementById("user").innerHTML = httpReq.getAllResponseHeaders("adjHeader");
+            
+//             console.log(httpReq.getAllResponseHeaders())
+
+//         }else{
+//             console.log(httpReq.getAllResponseHeaders())
+//         }
+//     }
+// }
+
 
 // $(document).ready(function(){
 //     cacheBust()
